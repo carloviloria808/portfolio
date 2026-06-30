@@ -92,8 +92,7 @@ export const projects = [
       'item, and comp data with a fast, responsive UI. RESTful API over a ' +
       'SQL Server schema (EF Core, Code First). Installable as a PWA.',
     tech: ['React', 'C# / ASP.NET Core', 'SQL Server', 'EF Core', 'PWA'],
-    // TODO: add a live URL when deployed (or leave null to hide the button)
-    live: null,
+    live: 'https://tft-tools.vercel.app',
     repo: 'https://github.com/carloviloria808/TFTools',
     image: '/projects/tftools-white.png',
     logo: true,
