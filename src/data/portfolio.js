@@ -55,8 +55,19 @@ export const skills = [
       { name: 'Node.js', level: 70, icon: 'brand-nodejs' },
       { name: 'Python', level: 70, icon: 'brand-python' },
       { name: 'Java', level: 70, icon: 'coffee' },
-      { name: 'MySQL / SQL Server', level: 75, icon: 'database' },
+      { name: 'PostgreSQL / SQL Server / MySQL', level: 75, icon: 'database' },
       { name: 'REST APIs', level: 75, icon: 'api' },
+    ],
+  },
+  {
+    group: 'Systems & IT',
+    items: [
+      { name: 'Windows Server / Active Directory', level: 70, icon: 'server' },
+      { name: 'Group Policy', level: 65, icon: 'shield-lock' },
+      { name: 'PowerShell', level: 65, icon: 'terminal-2' },
+      { name: 'TCP/IP · DNS · DHCP', level: 65, icon: 'network' },
+      { name: 'VirtualBox', level: 70, icon: 'box' },
+      { name: 'Ticketing & Documentation', level: 85, icon: 'ticket' },
     ],
   },
   {
@@ -89,13 +100,28 @@ export const projects = [
     featured: true,
     description:
       'A full-stack reference site for Teamfight Tactics Set 17 — champion, ' +
-      'item, and comp data with a fast, responsive UI. RESTful API over a ' +
-      'SQL Server schema (EF Core, Code First). Installable as a PWA.',
-    tech: ['React', 'C# / ASP.NET Core', 'SQL Server', 'EF Core', 'PWA'],
+      'item, and comp data with a fast, responsive UI. Deployed live: React ' +
+      'frontend on Vercel, containerized ASP.NET Core backend (Docker) on ' +
+      'Render, with a production PostgreSQL database migrated from SQL Server ' +
+      '(EF Core). Installable as a PWA.',
+    tech: ['React', 'C# / ASP.NET Core', 'PostgreSQL', 'EF Core', 'Docker', 'PWA'],
     live: 'https://tft-tools.vercel.app',
     repo: 'https://github.com/carloviloria808/TFTools',
     image: '/projects/tftools-white.png',
     logo: true,
+  },
+  {
+    name: 'Active Directory Home Lab',
+    description:
+      'A Windows Server 2022 domain built from scratch in VirtualBox — domain ' +
+      'controller with AD DS + DNS, organizational units, security groups, and ' +
+      'Group Policy (password baseline + desktop lockdown), verified on a ' +
+      'domain-joined Windows 11 client. Includes PowerShell onboarding ' +
+      'automation (20 users from CSV) and four documented real troubleshooting ' +
+      'incidents, each logged symptom → root cause → resolution.',
+    tech: ['Windows Server 2022', 'Active Directory', 'Group Policy', 'PowerShell', 'VirtualBox'],
+    live: null,
+    repo: 'https://github.com/carloviloria808/ad-home-lab',
   },
   {
     name: 'MyAIRealtor',
@@ -128,12 +154,21 @@ export const projects = [
 // Work / project experience, newest first.
 export const experience = [
   {
+    role: 'Windows System Administration',
+    org: 'Active Directory Home Lab — Personal Lab',
+    period: 'Jun – Jul 2026',
+    points: [
+      'Built and administer a Windows Server 2022 domain (lab.local) in VirtualBox: AD DS + DNS domain controller, OUs, security groups, and Group Policy enforced end-to-end on a domain-joined Windows 11 client.',
+      'Automated user onboarding with PowerShell (20 accounts from CSV via New-ADUser) and documented four real troubleshooting incidents — write-up, scripts, and docs published on GitHub.',
+    ],
+  },
+  {
     role: 'Full-Stack Developer',
     org: 'TFTools — Personal Project',
     period: 'Jan 2025 – Present',
     points: [
       'A full-stack reference site for Teamfight Tactics (Set 17) — browse champions, items, traits, and meta team comps through a fast, responsive UI that installs as a PWA.',
-      'Built with React on a C# / ASP.NET Core backend; designed a SQL Server schema with EF Core (Code First) and a RESTful API serving the game data.',
+      'Built with React on a C# / ASP.NET Core backend and deployed live — frontend on Vercel, Dockerized backend on Render — including a production SQL Server → PostgreSQL migration with EF Core.',
     ],
   },
   {
@@ -152,6 +187,15 @@ export const experience = [
     points: [
       'Built a gamified web app on Meteor where UH Mānoa students collect and trade professor "cards" earned by solving coding challenges — with user auth, a marketplace, wishlists, and an admin dashboard.',
       'Led UX from Figma wireframes to a working prototype, following Agile/Scrum.',
+    ],
+  },
+  {
+    role: 'IT Support Assistant',
+    org: 'Information Technology Services, UH Mānoa',
+    period: 'Aug 2022 – Dec 2023',
+    points: [
+      'Handled 30+ weekly phone and email support tickets, resolving hardware, software, and network issues for students and faculty across campus.',
+      'Authored and maintained a troubleshooting knowledge base that improved first-contact resolution; enforced security best practices across student lab and administrative systems.',
     ],
   },
   {
