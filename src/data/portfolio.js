@@ -105,7 +105,8 @@ export const projects = [
       'Render, with a production PostgreSQL database migrated from SQL Server ' +
       '(EF Core). Installable as a PWA.',
     tech: ['React', 'C# / ASP.NET Core', 'PostgreSQL', 'EF Core', 'Docker', 'PWA'],
-    live: 'https://tft-tools.vercel.app',
+    // Live demo paused — backend (free tier) lapsed. Re-add the URL to restore OPEN_LIVE.
+    live: null,
     repo: 'https://github.com/carloviloria808/TFTools',
     image: '/projects/tftools-white.png',
     logo: true,
