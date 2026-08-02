@@ -100,7 +100,7 @@ export const projects = [
     featured: true,
     description:
       'A full-stack reference site for Teamfight Tactics Set 17 — champion, ' +
-      'item, and comp data with a fast, responsive UI. Deployed live: React ' +
+      'item, and comp data with a fast, responsive UI. Full-stack deployment: React ' +
       'frontend on Vercel, containerized ASP.NET Core backend (Docker) on ' +
       'Render, with a production PostgreSQL database migrated from SQL Server ' +
       '(EF Core). Installable as a PWA.',
